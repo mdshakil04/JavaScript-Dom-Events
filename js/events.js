@@ -4,8 +4,10 @@ function changeColor(){
 }
 const tomatoBtn = document.getElementById('tomato');
 tomatoBtn.onclick = makeTomato;
-
 function makeTomato(){
     document.body.style.backgroundColor = 'tomato';
-    alert('Your body color will be change into Tomato')
+    // alert('Your body color will be change into Tomato')
 }
+document.getElementById('make-green').addEventListener('click', function(){
+    document.body.style.backgroundColor = 'green'
+})
