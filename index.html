@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS-DOM-Events</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <h1 id="dom-heading">JavaScript DOM Events</h1>
-        <button onclick="headingChange()">বাংলায় অনুবাদ করুন</button><br><br>
-        <button onclick="changeColor()">AquaMarine</button>
-        <button id="tomato">Tomato</button>
-        <button id="make-green">Green</button>
-        <section style="border: 1px solid tomato; margin-top: 10px; padding: 10px;">
-            <h2 id="default-text">Name</h2>
-            <input id="input-field" type="text">
-            <button id="update-btn">Update</button>
-        </section>
+      <h1 id="dom-heading">JavaScript DOM Events</h1>
+      <button onclick="headingChange()">বাংলায় অনুবাদ করুন</button><br /><br />
+      <button onclick="changeColor()">AquaMarine</button>
+      <button id="tomato">Tomato</button>
+      <button id="make-green">Green</button>
+      <section
+        style="border: 1px solid tomato; margin-top: 10px; padding: 10px"
+      >
+        <h2 id="default-text">Name</h2>
+        <input id="input-field" type="text" />
+        <button id="update-btn">Update</button>
+      </section>
+      <div
+        style="border: 1px solid tomato; margin-top: 10px; padding: 10px"
+      >
+        <div id="comment-container">
+          <h2>আপনার মন্তব্য লিখুন</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
+            incidunt quod error consequuntur dolor labore amet repellat iusto
+            autem pariatur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            tempore consequatur aliquid neque magnam, quas recusandae dolorum
+            cupiditate in similique.
+          </p>
+        </div>
+        <textarea name="" id="comment-box" cols="60" rows="5"></textarea><br />
+        <button id="post-btn">Post</button>
+      </div>
     </main>
     <script src="js/events.js"></script>
-</body>
+  </body>
 </html>
