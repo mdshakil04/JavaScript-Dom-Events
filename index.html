@@ -7,11 +7,16 @@
 </head>
 <body>
     <main>
-        <h1>JavaScript DOM Events</h1>
-        <button onclick="console.log('Do not Poke me')">Click Me</button>
+        <h1 id="dom-heading">JavaScript DOM Events</h1>
+        <button onclick="headingChange()">বাংলায় অনুবাদ করুন</button><br><br>
         <button onclick="changeColor()">AquaMarine</button>
         <button id="tomato">Tomato</button>
         <button id="make-green">Green</button>
+        <section style="border: 1px solid tomato; margin-top: 10px; padding: 10px;">
+            <h2 id="default-text">Name</h2>
+            <input id="input-field" type="text">
+            <button id="update-btn">Update</button>
+        </section>
     </main>
     <script src="js/events.js"></script>
 </body>

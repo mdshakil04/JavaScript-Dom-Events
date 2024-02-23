@@ -1,4 +1,11 @@
-console.log('JS Dom Events Running')
+function headingChange(){
+    // console.log('Button Change')
+    const heading = document.getElementById('dom-heading');
+    heading.innerText = 'জাভাস্ক্রিপ্ট ডম  ইভেন্টস'
+    document.body.style.backgroundColor = 'skyblue'
+}
+
+// console.log('JS Dom Events Running')
 function changeColor(){
     document.body.style.backgroundColor = "aquamarine"
 }
@@ -8,6 +15,18 @@ function makeTomato(){
     document.body.style.backgroundColor = 'tomato';
     // alert('Your body color will be change into Tomato')
 }
+// Important
 document.getElementById('make-green').addEventListener('click', function(){
-    document.body.style.backgroundColor = 'green'
+    document.body.style.backgroundColor = 'green';
+})
+
+// Input field related eventlistener
+document.getElementById('update-btn').addEventListener('click', function(){
+    // console.log('btn clicked')
+    const inputField = document.getElementById('input-field');
+    const inputText = inputField.value;
+    // console.log(inputText)
+    const defaultText = document.getElementById('default-text');
+    defaultText.innerText = inputText;
+
 })
