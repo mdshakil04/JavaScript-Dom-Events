@@ -10,3 +10,6 @@ document.getElementById('post-btn').addEventListener('click', function(){
     commentArea.appendChild(p)
     commentBox.value = '';
 })
+function makeGreen(){
+    document.body.style.backgroundColor = "green";
+}
